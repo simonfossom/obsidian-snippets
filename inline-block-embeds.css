@@ -1,0 +1,52 @@
+.cm-line .internal-embed[src*="#^"][src*="inline"].markdown-embed.inline-embed.is-loaded {
+  display: inline-flex !important;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 6px;
+}
+
+.cm-line .internal-embed[src*="#^"][src*="inline"].markdown-embed.inline-embed.is-loaded * {
+  font-size: var(--font-ui-small);
+}
+
+.cm-line .internal-embed[src*="#^"][src*="inline"].markdown-embed.inline-embed.is-loaded,
+.cm-line .internal-embed[src*="#^"][src*="inline"].markdown-embed.inline-embed.is-loaded * {
+  height: line-hight;
+}
+
+.cm-line .internal-embed[src*="#^"][src*="inline"].markdown-embed .markdown-preview-view {
+  padding: 2px 2px 2px 6px;
+}
+
+.cm-line .internal-embed[src*="#^"][src*="inline"].markdown-embed.inline-embed.is-loaded .markdown-embed-link {
+  margin: 0;
+  padding: 0;
+}
+
+.cm-line .internal-embed[src*="#^"][src*="inline"].markdown-embed.inline-embed.is-loaded div.markdown-embed-link svg {
+    display: flex;
+    margin: 4px;
+}
+
+/*
+doesn't work for multiline.
+the JavaScript would need to run each time the page loads to ensure that the text within the `<em>` tag is moved to a new `<span>` element, thereby ignoring the inherited styles and box model from its parent `<div>`s. You can include the script at the end of your HTML body or execute it when the document is ready, using either vanilla JavaScript or libraries like jQuery.
+For example, using vanilla JavaScript, you could wrap the code in a `DOMContentLoaded` event listener:
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Locate the <em> element
+  const emElement = document.querySelector('.internal-embed .el-p p em');
+
+  // Create a new <span> element
+  const newSpan = document.createElement('span');
+
+  // Copy the text from <em> to <span>
+  newSpan.textContent = emElement.textContent;
+
+  // Replace the <em> element with the new <span>
+  emElement.replaceWith(newSpan);
+});
+
+*/

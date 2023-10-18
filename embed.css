@@ -1,0 +1,63 @@
+.internal-embed.markdown-embed.inline-embed.is-loaded {
+    background-color: #29292950;
+    border-radius: 6px;
+  }
+
+  .markdown-preview-sizer {  
+    min-height: 0px !important;
+  }
+   
+.internal-embed h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  ul.contains-task-list.has-list-bullet {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .internal-embed h1[data-heading],
+  .internal-embed h2[data-heading],
+  .internal-embed h3[data-heading],
+  .internal-embed h4[data-heading],
+  .internal-embed h5[data-heading],
+  .internal-embed h6[data-heading] {
+    padding: 4px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+  }
+
+  .contains-task-list {
+    margin-top: 2px !important;
+  }
+
+  .embed-title {
+    padding: 0px;
+    display: none;
+  }
+
+.internal-embed {
+  display: flex !important;
+  align-content: stretch;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.markdown-embed-link {
+  position: relative;
+  align-self: self-start;
+  padding: 0;
+  width: auto !important;
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.markdown-embed-link svg {
+  display: flex;
+  margin: 8px;
+}
